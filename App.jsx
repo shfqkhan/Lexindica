@@ -509,7 +509,7 @@ export default function App() {
             {[
               ["1","Go to","https://aistudio.google.com/apikey","aistudio.google.com/apikey"],
               ["2","Sign in with any Google account (Gmail is fine)","",""],
-              ["3","Click "Create API Key" — copy it","",""],
+              ["3",'Click "Create API Key" — copy it',"",""],
               ["4","Paste it below and click Activate","",""],
             ].map(([n,text,url,label]) => (
               <div key={n} style={{display:"flex",gap:"10px",alignItems:"flex-start",marginBottom:"10px"}}>
