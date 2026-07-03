@@ -529,7 +529,13 @@ export default function App() {
             onBlur={e=>e.target.style.borderColor=P.border}
           />
           <button
-            onClick={() => { if(tempKey.trim().startsWith("AIza")){ setLiveKey(tempKey.trim()); setApiKeyMissing(false); } else { alert("Please enter a valid Gemini API key (starts with AIza)"); }}}
+            onClick={() => { const key = tempKey.trim();
+
+if (key.startsWith("AIza") || key.startsWith("AQ.")) {
+    setLiveKey(key);
+    setApiKeyMissing(false);
+} else {
+    alert("Please enter a valid Gemini API key."); }}}
             style={{width:"100%",background:`linear-gradient(135deg,${P.rose},${P.gold})`,border:"none",borderRadius:"10px",padding:"13px",color:"#fff",fontSize:"14px",fontWeight:"700",cursor:"pointer",fontFamily:"sans-serif",boxShadow:`0 4px 16px ${P.gold}40`}}
           >
             ⚖️ Activate LEXINDICA — Free
