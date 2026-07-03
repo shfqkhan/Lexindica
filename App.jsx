@@ -437,7 +437,7 @@ export default function App() {
     setLoading(true);
     setError("");
     try {
-      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${liveKey}`;
+      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${liveKey}`;
       const contents = newMsgs.map(m => ({
         role: m.role === "assistant" ? "model" : "user",
         parts: [{ text: m.content }],
