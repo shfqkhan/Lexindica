@@ -3,7 +3,7 @@ import { useState, useRef, useEffect, useCallback } from "react";
 // ── PASTE YOUR FREE GEMINI API KEY HERE ──────────────────────────────────────
 // Get it FREE at: https://aistudio.google.com/apikey (no credit card needed)
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "YOUR_GEMINI_API_KEY_HERE";
-const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
 
 // ── PASTEL PALETTE ────────────────────────────────────────────────────────────
 const P = {
